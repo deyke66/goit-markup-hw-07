@@ -50,13 +50,7 @@ p {
     padding-right: 15px;
     margin: 0 auto;
 }
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 /* Скритий заголовок */
-
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -73,27 +67,6 @@ p {
 .header-nav {
     display: flex;
 }
-.site-nav, 
-.link.current {
-    color: var(--color-blue);
-}
-.current::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    left: 0;
-    bottom: 0;
-    background-color: var(--color-blue);
-    border-radius: 2px;
-}
-.list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* logo */
 .header__container {
     display: flex;
 }
@@ -113,6 +86,7 @@ p {
 }
 .header__logo {
     display: inline-block;
+
     padding-top: 24px;
     padding-bottom: 25px;
     margin-right: 93px;
@@ -124,17 +98,17 @@ p {
     font-size: 26px;
     line-height: 1.2;
 }
-
-/* Nav */
-
-.site-nav {
+.header__menu {
     display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-.site-nav-item {
+.header__item {
     position: relative;
     
 }
-.site-nav .site-nav-item:not(:last-child) {
+.header__item:not(:last-child) {
     margin-right: 50px;
 }
 
@@ -143,10 +117,11 @@ p {
     align-items: center;
 }
 
-.link {
+.header__link {
     display: inline-block;
+
     padding-top: 32px;
-        padding-bottom: 32px;
+    padding-bottom: 32px;
 
     color: var(--color-text-secondary);
     text-decoration: none;
@@ -154,15 +129,30 @@ p {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
     transition: color 250ms var(--cubic-b);
 }
 
-.link:hover, 
-.link:focus {
+.header__menu,
+.header__link--current {
     color: var(--color-blue);
 }
-
-.aside {
+.header__link:hover, 
+.header__link:focus {
+    color: var(--color-blue);
+}
+.header__link--current::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--color-blue);
+    border-radius: 2px;
+}
+/* contact with us */
+.contact__link {
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -178,53 +168,41 @@ p {
     transition: color 250ms var(--cubic-b), fill 250ms var(--cubic-b);
 
 }
-
-
-.list.aside-list {
+.contact__menu {
     display: flex;
-    margin-left: auto;
     align-items: center;
-    
+    margin-left: auto;
+    margin-bottom: 0;
+    margin-top: 0;
 }
-
-
-.aside-item {
+.contact__item {
     display: block;
 }
-.icon-aside {
-
+.contact__icon {
     fill: #757575;
     margin-right: 10px;
-    
-    
-    
 }
 
-.aside:hover,
-.aside:focus {
+.contact__link:hover,
+.contact__link:focus {
     color: var(--color-blue);
 }
-.aside:hover .icon-aside, .aside:focus .icon-aside
+.contact__link:hover .contact__icon, .contact__link:focus .contact__icon
  {
     fill: var(--color-blue);
 }
-.list .aside-item:not(:last-child) {
+.contact__item:not(:last-child) {
     margin-right: 40px;
 }
-
 /* hero */
-.hero-box {
-    display: block;
-}
-
-
-.hero-section {
+.hero {
     max-width: 1600px;
+
     height: 600px;
     padding-top: 200px;
-        padding-bottom: 200px;
-        margin-right: auto;
-        margin-left: auto;
+    padding-bottom: 200px;
+    margin-right: auto;
+    margin-left: auto;
 
     background-color: var(--color-bcg-head-foot);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -232,19 +210,16 @@ p {
 
     text-align: center;
 }
-.hero-title {
+.hero__title {
     display: block;
 
     width: 696px;
 
-    
     margin: 0 auto 30px;
-
 
     color: var(--color-white-txt);
     text-align: center;
     text-transform: uppercase;
-
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -266,13 +241,13 @@ p {
     border-radius: 4px;
     
 }
-.button-main {
+.button__main {
     margin: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: background-color 250ms var(--cubic-b);
 }
-.button-main:focus,
-.button-main:hover {
+.button__main:focus,
+.button__main:hover {
     background-color:  var(--color-btn-focus);
     cursor: pointer;
 }
@@ -289,32 +264,41 @@ p {
     transition: color 250ms var(--cubic-b), background-color 250ms var(--cubic-b), box-shadow 250ms var(--cubic-b);
     
 }
-
 .portfolio-button:focus,
 .portfolio-button:hover {
-    
     background-color: var(--color-btn-focus);
 
     color: var(--color-white-txt);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     
 }
-/*  sections  */
+/* section basic */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+/*  section advantage  */
 
-.main-item > .thumb {
-display: flex;
-align-items: center;
-justify-content: center;
+.advantage {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 30px;
+}
+.advantage__item > .advantage__thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 270px;
     height: 120px;
+
     margin-bottom: 30px;
     background-color: var(--icon-bcg-color);
-
-
 }
-
-
-.section-title {
+.advantage__title {
     display: inline-block;
     color: var(--color-text-secondary);
 
@@ -326,23 +310,17 @@ justify-content: center;
     margin-bottom: 10px;
 }
 
-.section-text {
+.advantage__text {
     margin-bottom: 0;
 }
 
-.list.main-list {
-    display: flex;
-    align-items: center;
-    margin: 0;
-}
-.main-item {
+.advantage__item {
     width: 270px;
     height: 248px;
 }
-.main-item:not(:last-child) {
+/* .advantage__item:not(:last-child) {
     margin-right: 30px;
-}
-
+} */
 .title {
     color: var(--color-text-secondary);
     font-weight: 700;
@@ -352,12 +330,10 @@ justify-content: center;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
 }
-
 /* work */
 .list-work {
     display: flex;
 }
-
 .item-work {
     position: relative;
     margin-right: 30px;
@@ -393,9 +369,7 @@ justify-content: center;
 .section-job {
     padding-top: 0;
 }
-
 /* worker  */
-
 .worker-item {
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -483,7 +457,7 @@ background-color: var(--color-blue);
 .client-list {
     display: flex;
     
-gap: 30px;
+    gap: 30px;
     list-style: none;
     margin: 0;
     padding: 0;
