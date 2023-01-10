@@ -404,55 +404,75 @@
             >
             <address class="address">
               <ul class="address__list">
-                <li class="footer-item">
+                <li class="adress__item">
                   <a
                     href="https://goo.gl/maps/Uyhi9Q8qLwNsMNCV8"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
-                    class="footer-link"
+                    class="adress__link"
                     >м. Київ, пр-т Лесі Українки, 26</a
                   >
                 </li>
-                <li class="footer-item">
-                  <a href="mailto:info@devstudio.com" class="footer-aside"
+                <li class="adress__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="adress__link adress__link--feedback"
                     >info@devstudio.com</a
                   >
                 </li>
-                <li class="footer-item">
-                  <a href="tel:+380961111111" class="footer-aside"
+                <li class="adress__item">
+                  <a
+                    href="tel:+380961111111"
+                    class="adress__link adress__link--feedback"
                     >+38 096 111 11 11</a
                   >
                 </li>
               </ul>
             </address>
           </div>
-          <div class="join-thumb">
-            <p class="join-title">Приєднуйтесь</p>
-            <ul class="join-list">
-              <li class="social-item">
-                <a href="#" class="social-link">
-                  <svg class="social-icon-join" width="20" height="20">
+          <div class="feedback">
+            <p class="feedback__title">Приєднуйтесь</p>
+            <ul class="social-menu">
+              <li class="social-menu__item social-menu__item--footer">
+                <a href="#" class="social-menu__link">
+                  <svg
+                    class="social-menu__icon social-menu__icon--footer"
+                    width="20"
+                    height="20"
+                  >
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-item">
-                <a href="#" class="social-link">
-                  <svg class="social-icon-join" width="20" height="20">
+              <li class="social-menu__item social-menu__item--footer">
+                <a href="#" class="social-menu__link">
+                  <svg
+                    class="social-menu__icon social-menu__icon--footer"
+                    width="20"
+                    height="20"
+                  >
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-item">
-                <a href="#" class="social-link">
-                  <svg class="social-icon-join" width="20" height="20">
+              <li class="social-menu__item social-menu__item--footer">
+                <a href="#" class="social-menu__link">
+                  <svg
+                    class="social-menu__icon social-menu__icon--footer"
+                    width="20"
+                    height="20"
+                  >
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-item">
-                <a href="#" class="social-link">
-                  <svg class="social-icon-join" width="20" height="20">
+              <li class="social-menu__item social-menu__item--footer">
+                <a href="#" class="social-menu__link">
+                  <svg
+                    class="social-menu__icon social-menu__icon--footer"
+                    width="20"
+                    height="20"
+                  >
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -460,21 +480,23 @@
             </ul>
           </div>
           <form name="subscribe-form" autocomplete="off" class="subscribe-form">
-            <div class="subscribe-field">
-              <label class="subscribe-label" for="subscribe"
+            <div class="subscribe-form__field">
+              <label class="subscribe-form__label" for="subscribe"
                 >Підпишіться на розсилку</label
               >
               <input
-                class="subscribe-input"
+                class="subscribe-form__input"
                 name="email"
                 type="email"
                 id="subscribe"
                 placeholder="E-mail"
               />
             </div>
-            <div class="subscribe-field-btn">
-              <button class="subscribe-btn" type="submit">Підписатися</button>
-              <svg class="subscribe-icon" width="24" height="24">
+            <div class="subscribe-form__field subscribe-form__field--button">
+              <button class="subscribe-form__button" type="submit">
+                Підписатися
+              </button>
+              <svg class="subscribe-form__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
             </div>

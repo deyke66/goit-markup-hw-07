@@ -431,7 +431,7 @@ p {
     justify-content: center;
     list-style: none;
     padding: 0;
-    margin-bottom: 0;
+    margin: 0;
     gap: 10px;
     }
     
@@ -599,15 +599,6 @@ background-color: var(--color-blue);
 .footer__box {
     display: flex;
     align-items: baseline;
-}
-/* address thumb */
-.address {  
-    font-style: normal;
-}
-.address__list {
-    display: block;
-    list-style: none;
-    margin: 0;
     padding: 0;
 }
 .footer-logo {
@@ -619,70 +610,65 @@ background-color: var(--color-blue);
     font-size: 26px;
     line-height: 1.2;
     margin-bottom: 28px;
-    
+
 }
-.footer-item {
+/* address thumb */
+.address {  
+    font-style: normal;
+}
+.address__list {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.adress__item {
     display: block;
     margin-bottom: 12px;
 }
-.footer-item:last-child {
+.adress__item:last-child {
     margin-bottom: 0;
 }
-.footer__box {
-    padding: 0;
-}
-.footer-aside {
-    color: rgba(255, 255, 255,0.6);
-    text-decoration: none;
-    transition: color 250ms var(--cubic-b);
-}
-
-.footer-aside:hover, .footer-aside:focus {
-    color: var(--color-blue);
-}
-.footer-link:hover, .footer-link:focus {
-    color: var(--color-blue);
-}
-
-.footer-link {
+.adress__link {
     color: var(--color-white-txt);
     text-decoration: none;
     transition: color 250ms var(--cubic-b);
 }
+.adress__link:hover,
+.adress__link:focus {
+    color: var(--color-blue);
+}
+.adress__link--feedback {
+    color: rgba(255, 255, 255,0.6);
+}
 
-/* join-list */
-.join-thumb {
+.adress__link--feedback:hover, .adress__link--feedback:focus {
+    color: var(--color-blue);
+}
+/* feedback list */
+.feedback {
     margin-right: 93px;
 }
-.join-list {
-    display: flex;
-    padding: 0;
-    list-style: none;
-    margin: 0;
-    gap: 10px;
-}
-.social-item {
-    background-color: var(--join-icon);
-    border-radius: 50%;
-}
-.join-title {
+.feedback__title {
     display: inline-block;
     margin-bottom: 20px;
 
     margin-right: 0;
 
     font-weight: 700;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
-   color: var(--color-white-txt);     
+    color: var(--color-white-txt);
 }
-.social-item {
+.social-menu__item--footer {
+    background-color: var(--join-icon);
+    border-radius: 50%;
     display: inline-block;
 }
-.social-icon-join {
+.social-menu__icon--footer {
     fill: var(--color-white-txt);
 }
 
@@ -692,20 +678,24 @@ background-color: var(--color-blue);
     width: 570px;
     height: 86px;
 }
-.subscribe-field {
+.subscribe-form__field {
     display: flex;
     flex-direction: column;
     margin-right: 12px;
-
 }
-.subscribe-label {
+.subscribe-form__field--button {
+    flex-direction: column-reverse;
+    position: relative;
+    margin: 0;
+}
+.subscribe-form__label {
     font-weight: 700;
     line-height: 1.1;
     text-transform: uppercase;
     color: var(--color-white-txt);
     margin-bottom: 20px;
 }
-.subscribe-input {
+.subscribe-form__input {
     width: 358px;
     height: 50px;
     background-color: var(--color-bcg-head-foot);
@@ -717,21 +707,16 @@ background-color: var(--color-blue);
     color: var(--color-white-txt);
     transition: border-color 250ms var(--cubic-b);
 }
-.subscribe-input:focus {
+.subscribe-form__input:focus {
     border-color: var(--color-blue);
 }
-.subscribe-input::placeholder {
+.subscribe-form__input::placeholder {
     font-weight: 400;
     font-size: 16px;
     line-height: calc(20 / 16);
     color: rgba(255, 255, 255, 0.6);
 }
-.subscribe-field-btn {
-    display: flex;
-    flex-direction: column-reverse;
-    position: relative;
-}
-.subscribe-btn {
+.subscribe-form__button {
     width: 200px;
     height: 50px;
 
@@ -749,12 +734,12 @@ background-color: var(--color-blue);
     border: transparent;
     transition: background-color 250ms var(--cubic-b);
 }
-.subscribe-btn:hover,
-.subscribe-btn:focus {
+.subscribe-form__button:hover,
+.subscribe-form__button:focus {
     background-color: var(--color-btn-focus);
     cursor: pointer;
 }
-.subscribe-icon {
+.subscribe-form__icon {
     position: absolute;
     fill: var(--color-white-txt);
     bottom: 13px;
