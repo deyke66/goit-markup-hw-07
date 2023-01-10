@@ -277,6 +277,15 @@ p {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.section__title {
+    color: var(--color-text-secondary);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
 /*  section advantage  */
 
 .advantage {
@@ -318,10 +327,12 @@ p {
     width: 270px;
     height: 248px;
 }
-/* .advantage__item:not(:last-child) {
-    margin-right: 30px;
-} */
-.title {
+
+/* example section */
+.example {
+    padding-bottom: 94px;
+}
+.example__title {
     color: var(--color-text-secondary);
     font-weight: 700;
     font-size: 36px;
@@ -330,18 +341,22 @@ p {
     letter-spacing: 0.03em;
     margin-bottom: 50px;
 }
-/* work */
-.list-work {
+.example__list {
     display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
 }
-.item-work {
+.example__item {
     position: relative;
-    margin-right: 30px;
 }
-.item-work-description {
+.example__description {
     position: absolute;
 
     display: flex;
+    justify-content: center;
+    align-items: center;
 
     width: 100%;
     height: 70px;
@@ -355,39 +370,44 @@ p {
     background-color: rgba(47, 48, 58, 0.8);
 
     font-weight: 700;
-        font-size: 14px;
-        line-height: calc(16 / 14);
-        text-align: center;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        justify-content: center;
-        align-items: center;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
-.item-work:last-child {
-    margin-right: 0;
-} 
-.section-job {
-    padding-top: 0;
+/* section developers */
+.developers {
+    background-color: var(--color-sect-worker);
 }
-/* worker  */
-.worker-item {
-
+.developers__title {
+    color: var(--color-text-secondary);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+.card_menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.card__item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
     border-radius: 0px 0px 4px 4px;
-        
 }
-.section-worker {
-    background-color: var(--color-sect-worker);
+.card__box {
+    width: 270px;
+    background-color: var(--color-white-txt);
+    padding: 30px;
+    border-radius: 0px 0px 4px 4px;
 }
-.worker-list {
-    display: flex;
-    
-}
-.worker-item:not(:last-child) {
-    margin-right: 30px;
-}
-.user {
+.card__title {
     color: var(--color-text-secondary);
     text-align: center;
     font-weight: 500;
@@ -397,7 +417,7 @@ p {
     margin-bottom: 10px;
 
 }
-.user-text {
+.card__subtitle {
     text-align: center;
     font-size: 16px;
     line-height: 1.2;
@@ -405,19 +425,17 @@ p {
     margin-bottom: 16px;
 
 }
-
-.user-contact-item {
+/* social menu cards */
+.social-menu {
     display: flex;
-     padding: 0;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
     margin-bottom: 0;
     gap: 10px;
-    justify-content: center;
+    }
     
-    list-style: none;
-    
-}
-
-.social-link {
+.social-menu__link {
    display: flex;
 
    width: 44px;
@@ -430,31 +448,21 @@ p {
    transition: background-color 250ms var(--cubic-b);
 
 }
-.social-link:hover,
-.social-link:focus {
+.social-menu__link:hover,
+.social-menu__link:focus {
 background-color: var(--color-blue);
 }
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
+.social-menu__link:hover .social-menu__icon,
+.social-menu__link:focus .social-menu__icon {
     fill: var(--color-white-txt);
 }
 
-.social-icon {
-    
+.social-menu__icon {
     fill: var(--color-social-icon);
     transition: fill 250ms var(--cubic-b);
 }
-
-
-.worker-box {
-    width: 270px;
-    background-color: var(--color-white-txt);
-    padding: 30px;
-    border-radius: 0px 0px 4px 4px;
-}
-
-/* Постійні Клієнти */
-.client-list {
+/* clients section */
+.clients {
     display: flex;
     
     gap: 30px;
@@ -463,33 +471,28 @@ background-color: var(--color-blue);
     padding: 0;
     
 }
+.clients__link {
+    display: flex;
+    width: 170px;
+    height: 92px;
 
-.client-icon {
+    border: 1px solid var(--color-social-icon);
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    transition: border 250ms var(--cubic-b);
+}
+.clients__icon {
     fill: var(--color-social-icon);
     transition: fill 250ms var(--cubic-b);
 }
-
-.client-link:hover,
-.client-link:focus {
+.clients__link:hover,
+.clients__link:focus {
     border: 1px solid var(--color-blue);
 }
-
-.client-link:hover .client-icon,
-.client-link:focus .client-icon {
+.clients__link:hover .clients__icon,
+.clients__link:focus .clients__icon {
     fill: var(--color-blue);
-}
-
-
-.client-link {
-    display: flex;
-    width: 170px;
-        height: 92px;
-    
-        border: 1px solid var(--color-social-icon);
-        border-radius: 4px;
-        align-items: center;
-        justify-content: center;
-    transition: border 250ms var(--cubic-b);    
 }
 /* portfol */
 .portfolio-list {
@@ -586,20 +589,26 @@ background-color: var(--color-blue);
 .section-footer {
     background-color: var(--color-bcg-head-foot);
 }
-.footer-box {
-    display: flex;
-    align-items: baseline;
-}
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.address {
-    
+.footer__thumb {
+    margin-right: 93px;
+}
+.footer__box {
+    display: flex;
+    align-items: baseline;
+}
+/* address thumb */
+.address {  
     font-style: normal;
 }
-.address-thumb {
-    margin-right: 93px;
+.address__list {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 .footer-logo {
     display: block;
@@ -619,7 +628,7 @@ background-color: var(--color-blue);
 .footer-item:last-child {
     margin-bottom: 0;
 }
-.footer-box {
+.footer__box {
     padding: 0;
 }
 .footer-aside {
@@ -627,9 +636,7 @@ background-color: var(--color-blue);
     text-decoration: none;
     transition: color 250ms var(--cubic-b);
 }
-.footer-list {
-    display: block;
-}
+
 .footer-aside:hover, .footer-aside:focus {
     color: var(--color-blue);
 }
