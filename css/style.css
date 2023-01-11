@@ -1,5 +1,5 @@
 /* коріння */
-:root {
+/* :root {
     --color-blue: #2196F3; 
     --color-btn-focus: #188CE8;
     --color-text-header: #000000;
@@ -18,9 +18,9 @@
     --cubic-b: cubic-bezier(0.4, 0, 0.2, 1);
 
 
-}
+} */
 
-img {
+/* img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -32,9 +32,9 @@ body {
     font-size: 14px;
     line-height: 1.4;
     letter-spacing: 0.03em;
-}
+} */
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -42,16 +42,16 @@ h5,
 h6,
 p {
     margin-top: 0;
-}
+} */
 
-.container {
+/* .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-}
+} */
 /* Скритий заголовок */
-.visually-hidden {
+/* .visually-hidden {
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -62,9 +62,9 @@ p {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-}
+} */
 
-.header-nav {
+/* .header-nav {
     display: flex;
 }
 .header__container {
@@ -78,8 +78,8 @@ p {
     font-size: 26px;
     line-height: 1.2;
     
-}
-.header {
+} */
+/* .header {
     border: 1px var(--color-border);
     margin: 0 auto;
     border-bottom: 1px solid var(--color-border);
@@ -150,9 +150,9 @@ p {
     bottom: 0;
     background-color: var(--color-blue);
     border-radius: 2px;
-}
+} */
 /* contact with us */
-.contact__link {
+/* .contact-menu__link {
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -168,34 +168,34 @@ p {
     transition: color 250ms var(--cubic-b), fill 250ms var(--cubic-b);
 
 }
-.contact__menu {
+.contact-menu {
     display: flex;
     align-items: center;
     margin-left: auto;
     margin-bottom: 0;
     margin-top: 0;
 }
-.contact__item {
+.contact-menu__item {
     display: block;
 }
-.contact__icon {
+.contact-menu__icon {
     fill: #757575;
     margin-right: 10px;
 }
 
-.contact__link:hover,
-.contact__link:focus {
+.contact-menu__link:hover,
+.contact-menu__link:focus {
     color: var(--color-blue);
 }
-.contact__link:hover .contact__icon, .contact__link:focus .contact__icon
+.contact-menu__link:hover .contact-menu__icon, .contact-menu__link:focus .contact-menu__icon
  {
     fill: var(--color-blue);
 }
-.contact__item:not(:last-child) {
+.contact-menu__item:not(:last-child) {
     margin-right: 40px;
-}
+} */
 /* hero */
-.hero {
+/* .hero {
     max-width: 1600px;
 
     height: 600px;
@@ -224,9 +224,9 @@ p {
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-}
+} */
 /* buttons */
-.button {
+/* .button {
     display: inline-block;
     border: 1px transparent;
     color: var(--color-white-txt);
@@ -240,19 +240,19 @@ p {
     padding: 10px 24px;
     border-radius: 4px;
     
-}
-.button__main {
+} */
+/* .hero__button {
     margin: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: background-color 250ms var(--cubic-b);
 }
-.button__main:focus,
-.button__main:hover {
+.hero__button:focus,
+.hero__button:hover {
     background-color:  var(--color-btn-focus);
     cursor: pointer;
-}
+} */
 /* section basic */
-.section {
+/* .section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -264,10 +264,10 @@ p {
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
-}
+} */
 /*  section advantage  */
 
-.advantage {
+/* .advantage {
     display: flex;
     align-items: center;
     padding: 0;
@@ -305,10 +305,10 @@ p {
 .advantage__item {
     width: 270px;
     height: 248px;
-}
+} */
 
 /* example section */
-.example {
+/* .example {
     padding-bottom: 94px;
 }
 .example__title {
@@ -354,9 +354,9 @@ p {
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-}
+} */
 /* section developers */
-.developers {
+/* .developers {
     background-color: var(--color-sect-worker);
 }
 .developers__title {
@@ -403,9 +403,9 @@ p {
     letter-spacing: 0.03em;
     margin-bottom: 16px;
 
-}
+} */
 /* social menu cards */
-.social-menu {
+/* .social-menu {
     display: flex;
     justify-content: center;
     list-style: none;
@@ -439,7 +439,7 @@ background-color: var(--color-blue);
 .social-menu__icon {
     fill: var(--color-social-icon);
     transition: fill 250ms var(--cubic-b);
-}
+} */
 /* clients section */
 .clients {
     display: flex;
