@@ -3,13 +3,19 @@
 @import './base/base';
 @import './base/reset';
 
-@import './components/button';
-@import './components/container';
-@import './components/hidden';
-@import './components/section';
+@import './layout/backdrop';
+@import './layout/button';
+@import './layout/container';
+@import './layout/form';
+@import './layout/hidden';
+@import './layout/section';
+@import './layout/social-menu';
 
-@import './layout/advantage-section';
-@import './layout/developers-section';
-@import './layout/example-section';
-@import './layout/header';
-@import './layout/hero';
+@import './modules/advantage-section';
+@import './modules/client-section';
+@import './modules/developers-section';
+@import './modules/example-section';
+@import './modules/footer';
+@import './modules/header';
+@import './modules/hero';
+@import './modules/product';

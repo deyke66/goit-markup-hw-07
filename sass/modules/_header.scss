@@ -69,8 +69,6 @@
         border-radius: 2px;
     }
 }
-
-
 .contact-menu {
     display: flex;
     align-items: center;
@@ -110,4 +108,12 @@
     &__link:hover &__icon, &__link:focus &__icon {
         fill: var(--color-blue);
     }
+}
+.accent {
+    color: var(--color-blue);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    
 }
